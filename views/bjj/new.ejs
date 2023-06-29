@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New</title>
+</head>
+<body>
+    <h1>Add New BJJ Move</h1>
+
+    <div class="new-inputs">
+        <form action="/bjj" method="POST">
+            <input type="text" name="name" placeholder="Name of Move">
+            <input type="text" name="position" placeholder="Position">
+            <input type="text" name="movement" placeholder="Movement">
+            <input type="text" name="submission" placeholder="Submission">
+            <input type="text" name="img" placeholder="Image">
+
+            <input type="checkbox" name="learned"/>
+            <input type="submit" value="Add" class="create-button">
+        </form>
+    </div>
+</body>
+</html>

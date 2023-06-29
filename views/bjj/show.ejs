@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs')
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show</title>
+</head>
+<body>
+    <div class="banner">
+        <h1>BJJ Moves</h1>
+    </div>
+
+    <div class="button-container">
+        <a href="/bjj"><button>Back</button></a>
+        <a href="/bjj/<%= bjj._id %>/edit"><button>Edit</button></a>
+    </div>
+
+    <div class="delete-button">
+        <form action="/bjj/<%= bjj._id %>?_method=delete" method="POST">
+        <input type="submit" value="Delete">
+        </form>    
+    </div>
+
+    <div class="name">
+        <p><%= bjj.name %></p>
+    </div>
+
+    <div class="position">
+        <p><%= bjj.position %></p>    
+    </div>
+
+    <div class="movement">
+        <p><%= bjj.movement %></p>
+    </div>
+
+    <div class="submission">
+        <p><%= bjj.submission %></p>
+    </div>
+
+    <div class="img">
+        <img src="<%= bjj.img %>">    
+    </div>
+
+    <div class="learned">
+        <p>Learned: <%= bjj.completed %></p>
+    </div>
+</body>
+</html>

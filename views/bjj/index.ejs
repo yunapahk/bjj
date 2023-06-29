@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+    <h1>Bjj Moves</h1>
+
+    <div class="create-button">
+        <a href="bjj/new"><button>Add New Move</button></a>
+    </div>
+
+    <div class="index-container">
+        <%= bjj.forEach((bjj, index) => { %>
+    
+    <div class="index-songbird">
+        <a href="/bjj/<%= bjj._id %>" class="no-underline"><h2 class="index-name"><%= bjj.name %></h2></a>
+        <img class="index-image" src="<%= bjj.img %>">
+    </div>
+       <% }) %>
+    </div>
+<body>
+    
+</body>
+</html>
