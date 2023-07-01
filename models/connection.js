@@ -1,5 +1,6 @@
-require("dotenv").config()
+const dotenv = require("dotenv")
 const mongoose = require("mongoose")
+require("dotenv").config()
 
 const DATABASE_URL = process.env.DATABASE_URL
 console.log(DATABASE_URL)

@@ -1,14 +1,14 @@
 const index = require("./indexRoute")
-const newBjj = require("./new")
+const newMove = require("./new")
 const show = require("./show")
 const create = require("./create")
 const edit = require("./edit")
 const update = require("./update")
 const destroy = require("./delete")
 
-module exports = {
+module.exports = {
     index,
-    new: newBjj,
+    new: newMove,
     show,
     create,
     edit,

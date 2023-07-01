@@ -1,12 +1,13 @@
-const Bjj = require("./bjj")
+const Move = require("./move")
 const mongoose = require("./connection")
+const moves = require('/seedData')
 
 async function seed() {
-    await Bjj.deleteMany({})
+    await Move.deleteMany({})
 
-    const createdBjj = await Bjj.create(bjjs)
-    console.log(createdBjj.length)
-    console.log(createdBjjs[0])
+    const createdMove = await Move.create(moves)
+    console.log(createdMoves.length)
+    console.log(createdMoves[0])
 }
 
 mongoose.connection.on("open", () => {seed()})

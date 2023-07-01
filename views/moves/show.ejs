@@ -12,38 +12,33 @@
     </div>
 
     <div class="button-container">
-        <a href="/bjj"><button>Back</button></a>
-        <a href="/bjj/<%= bjj._id %>/edit"><button>Edit</button></a>
+        <a href="/move"><button>Back</button></a>
+        <a href="/move/<%= move._id %>/edit"><button>Edit</button></a>
     </div>
 
     <div class="delete-button">
-        <form action="/bjj/<%= bjj._id %>?_method=delete" method="POST">
+        <form action="/move/<%= move._id %>?_method=delete" method="POST">
         <input type="submit" value="Delete">
         </form>    
     </div>
 
-    <div class="name">
-        <p><%= bjj.name %></p>
-    </div>
-
     <div class="position">
-        <p><%= bjj.position %></p>    
+        <p>Position: <%= move.position.name %></p>
+        <img src="<%= move.position.img %>">    
     </div>
 
     <div class="movement">
-        <p><%= bjj.movement %></p>
+        <p>Movement: <%= move.movement.name %></p>
+        <img src="<%= move.movement.img %>">   
     </div>
 
     <div class="submission">
-        <p><%= bjj.submission %></p>
-    </div>
-
-    <div class="img">
-        <img src="<%= bjj.img %>">    
+        <p>Submission: <%= move.submission.name %></p>
+        <img src="<%= move.submission.img %>">   
     </div>
 
     <div class="learned">
-        <p>Learned: <%= bjj.completed %></p>
+        <p>Learned: <%= move.completed %></p>
     </div>
 </body>
 </html>

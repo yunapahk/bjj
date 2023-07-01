@@ -9,15 +9,15 @@
     <h1>Bjj Moves</h1>
 
     <div class="create-button">
-        <a href="bjj/new"><button>Add New Move</button></a>
+        <a href="move/new"><button>Add New Move</button></a>
     </div>
 
     <div class="index-container">
-        <%= bjj.forEach((bjj, index) => { %>
+        <%= move.forEach((move, index) => { %>
     
-    <div class="index-songbird">
-        <a href="/bjj/<%= bjj._id %>" class="no-underline"><h2 class="index-name"><%= bjj.name %></h2></a>
-        <img class="index-image" src="<%= bjj.img %>">
+    <div class="index-move">
+        <a href="/move/<%= move._id %>" class="no-underline"><h2 class="index-name"><%= move.name %></h2></a>
+        <img class="index-image" src="<%= move.img %>">
     </div>
        <% }) %>
     </div>

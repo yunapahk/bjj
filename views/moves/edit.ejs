@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit <%= move.name %></title>
+</head>
+<body>
+    <h1>Edit Bjj Move</h1>
+    <form action="/move/<%= move._id %>?_method=put" method="POST">
+        <input type="text" name="name" placeholder="Name of Move" value="<%= move.name %>"/>
+        <input type="text" name="position" placeholder="Name of position" value="<%= move.position %>"/>
+        <input type="text" name="movement" placeholder="Name of Movement" value="<%= move.movement %>"/>
+        <input type="text" name="img" placeholder="Name of Move" value="<%= move.name %>"/>
+    
+    Learned: <input type="checkbox" name="extinct" value="<%= move.completed ? "checked" : '' %>"/>
+        <input type="submit" value="Updated Move"/>
+    </form>
+</body>
+</html>

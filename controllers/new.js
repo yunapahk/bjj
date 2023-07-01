@@ -1,5 +1,5 @@
-function newBjj(req, res) {
-    res.render("bjj/new.ejs")
+function newMove(req, res) {
+    res.render("move/new.ejs")
 }
 
-module.exports = newBjj
+module.exports = newMove

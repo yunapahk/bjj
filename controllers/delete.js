@@ -1,9 +1,9 @@
-const Bjj = require("../../models/bjj")
+const Move = require("../../models/move")
 
 async function destroy(req, res) {
     const id = req.params.id
-    await Songbird.findByIdAndRemove(id)
-    res.redirect("/bjj")
+    await Move.findByIdAndRemove(id)
+    res.redirect("/move")
 }
 
 module.exports = destroy
