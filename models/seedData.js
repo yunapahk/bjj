@@ -1,3 +1,12 @@
-const move = [
+const positions = [
     
-]
+];
+
+const movements = [
+
+];
+
+const submission = [
+
+];
+

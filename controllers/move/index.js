@@ -1,5 +1,5 @@
-const index = require("./indexRoute")
-const newMove = require("./new")
+const index = require("./indexRoute") 
+const { newPosition, newMovement, newSubmission } = require("./new");
 const show = require("./show")
 const create = require("./create")
 const edit = require("./edit")
@@ -8,7 +8,11 @@ const destroy = require("./delete")
 
 module.exports = {
     index,
-    new: newMove,
+    new: {
+        newPosition, 
+        newMovement, 
+        newSubmission,
+    },
     show,
     create,
     edit,
