@@ -3,18 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit <%= move.name %></title>
+    <title>Edit <%= position.name %> - <%= movement.name %> - <%= submission.name %></title>
 </head>
 <body>
-    <h1>Edit Bjj Move</h1>
-    <form action="/move/<%= move._id %>?_method=put" method="POST">
-        <input type="text" name="name" placeholder="Name of Move" value="<%= move.name %>"/>
-        <input type="text" name="position" placeholder="Name of position" value="<%= move.position %>"/>
-        <input type="text" name="movement" placeholder="Name of Movement" value="<%= move.movement %>"/>
-        <input type="text" name="img" placeholder="Name of Move" value="<%= move.name %>"/>
+    <h1>Edit BJJ Move</h1>
+    <% if (position) { %>
+        <h2>Edit Position</h2>
+        <form action="/positions/<%= position._id %>?_method=put" method="POST">
+            <input type="text" name="name" placeholder="Name of Position" value="<%= position.name %>"/>
+            <input type="text" name="img" placeholder="Image of Position" value="<%= position.img %>"/>
+            <input type="submit" value="Update Position"/>
+        </form>
+    <% } %>
     
-    Learned: <input type="checkbox" name="extinct" value="<%= move.completed ? "checked" : '' %>"/>
-        <input type="submit" value="Updated Move"/>
-    </form>
+    <% if (movement) { %>
+        <h2>Edit Movement</h2>
+        <form action="/movements/<%= movement._id %>?_method=put" method="POST">
+            <input type="text" name="name" placeholder="Name of Movement" value="<%= movement.name %>"/>
+            <input type="text" name="img" placeholder="Image of Movement" value="<%= movement.img %>"/>
+            <input type="submit" value="Update Movement"/>
+        </form>
+    <% } %>
+    
+    <% if (submission) { %>
+        <h2>Edit Submission</h2>
+        <form action="/submissions/<%= submission._id %>?_method=put" method="POST">
+            <input type="text" name="name" placeholder="Name of Submission" value="<%= submission.name %>"/>
+            <input type="text" name="img" placeholder="Image of Submission" value="<%= submission.img %>"/>
+            <input type="submit" value="Update Submission"/>
+        </form>
+    <% } %> 
 </body>
 </html>

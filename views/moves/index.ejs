@@ -9,11 +9,11 @@
     <h1>Bjj Moves</h1>
 
     <div class="create-button">
-        <a href="move/new"><button>Add New Move</button></a>
+        <a href="position/new"><button>Add New Position</button></a>
     </div>
 
     <div class="index-container">
-        <%= move.forEach((move, index) => { %>
+        <%= position.forEach((move, index) => { %>
     
     <div class="index-move">
         <a href="/move/<%= move._id %>" class="no-underline"><h2 class="index-name"><%= move.name %></h2></a>
