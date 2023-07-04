@@ -8,12 +8,12 @@ const positions = require('./seedData');
 const movements = require('./seedData');
 const submissions = require('./seedData');
 
-async function seed() {
+async function seed() { // populate database
     await Position.deleteMany({});
     await Movement.deleteMany({});
     await Submission.deleteMany({});
 
-    const createdPositions = await Position.create(positions);
+    const createdPositions = await Position.create(positions); // Insert seed data
     const createdMovements = await Movement.create(movements);
     const createdSubmissions = await Submission.create(submissions);
 
@@ -27,4 +27,4 @@ async function seed() {
     console.log(createdPositions[0]);
 }
 
-mongoose.connection.on("open", () => {seed()})
+mongoose.connection.on("open", () => {seed()}) // Run seed function when database connection is open
