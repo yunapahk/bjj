@@ -10,13 +10,27 @@
     <h1>Add New BJJ Move</h1>
 
     <div class="new-inputs">
-        <form action="/move" method="POST">
-            <input type="text" name="name" placeholder="Name of Move">
-            <input type="text" name="position" placeholder="Position">
-            <input type="text" name="movement" placeholder="Movement">
-            <input type="text" name="submission" placeholder="Submission">
-            <input type="text" name="img" placeholder="Image">
+        <form action="/position" method="POST">
+            <input type="text" name="name" placeholder="Name of Position">
+            <input type="text" name="img" placeholder="Image of Position">
+            <input type="checkbox" name="learned"/>
+            <input type="submit" value="Add" class="create-button">
+        </form>
+    </div>
 
+    <div class="new-inputs">
+        <form action="/movement" method="POST">
+            <input type="text" name="name" placeholder="Name of Movement">
+            <input type="text" name="img" placeholder="Image of Movement">
+            <input type="checkbox" name="learned"/>
+            <input type="submit" value="Add" class="create-button">
+        </form>
+    </div>
+
+    <div class="new-inputs">
+        <form action="/submission" method="POST">
+            <input type="text" name="name" placeholder="Name of Submission">
+            <input type="text" name="img" placeholder="Image of Submission">
             <input type="checkbox" name="learned"/>
             <input type="submit" value="Add" class="create-button">
         </form>

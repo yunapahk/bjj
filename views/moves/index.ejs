@@ -6,22 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
 </head>
-    <h1>Bjj Moves</h1>
+<body>
+    <h1>Edit Bjj Moves</h1>
 
     <div class="create-button">
         <a href="position/new"><button>Add New Position</button></a>
+        <a href="movement/new"><button>Add New Movement</button></a>
+        <a href="submission/new"><button>Add New Submission</button></a>
     </div>
 
+    <h2>Positions</h2>
     <div class="index-container">
-        <%= position.forEach((move, index) => { %>
-    
-    <div class="index-move">
-        <a href="/move/<%= move._id %>" class="no-underline"><h2 class="index-name"><%= move.name %></h2></a>
-        <img class="index-image" src="<%= move.img %>">
+        <% position.forEach((position, index) => { %>
+            <div class="index-item">
+                <h3><a href="/position/<%= position._id %>" class="no-underline"><%= position.name %></a></h3>
+                <img class="index-image" src="<%= position.img %>">
+            </div>
+        <% }) %>
     </div>
-       <% }) %>
+
+    <h2>Movements</h2>
+    <div class="index-container">
+        <% movement.forEach((movement, index) => { %>
+            <div class="index-item">
+                <h3><a href="/movement/<%= movement._id %>" class="no-underline"><%= movement.name %></a></h3>
+                <img class="index-image" src="<%= movement.img %>">
+            </div>
+        <% }) %>
     </div>
-<body>
-    
+
+    <h2>Submissions</h2>
+    <div class="index-container">
+        <% submission.forEach((submission, index) => { %>
+            <div class="index-item">
+                <h3><a href="/submission/<%= submission._id %>" class="no-underline"><%= submission.name %></a></h3>
+                <img class="index-image" src="<%= submission.img %>">
+            </div>
+        <% }) %>        
+    </div>
 </body>
 </html>
