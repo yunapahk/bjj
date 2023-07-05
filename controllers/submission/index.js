@@ -1,6 +1,6 @@
 const index = require("./indexRoute") 
 const newSubmission = require("./new");
-const show = require("./show")
+const show = require("../show")
 const create = require("./create")
 const edit = require("./edit")
 const update = require("./update")
