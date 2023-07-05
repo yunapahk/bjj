@@ -1,6 +1,6 @@
 const positionRoutes = require('../routes/position')
-const movementRoutes = require('../routes/position')
-const submissionRoutes = require('../routes/position')
+const movementRoutes = require('../routes/movement')
+const submissionRoutes = require('../routes/submission')
 
 function registerControllers(app) {
     app.use('/positions', positionRoutes);
@@ -8,4 +8,4 @@ function registerControllers(app) {
     app.use('/submissions', submissionRoutes);
 }
 
-module.exports = registerControllers
+module.exports = registerControllers;

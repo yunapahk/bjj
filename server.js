@@ -10,7 +10,7 @@ const app = express()
 middleware(app)
 
 // REGISTER ROUTES/CONTROLLERS
-registerControllers(app)
+registerControllers(app);
 
 // LISTENER //
 app.listen(process.env.PORT, () => {
