@@ -1,27 +1,29 @@
-const Router = require('express').Router() 
+const Router = require('express').Router
 const controller = require('../controllers/position') 
+
+const router = Router()
 
             // ROUTES // 
 
 // INDEX //
-router.get('/', controller.index)
+router.get("/", controller.index)
 
 // NEW //
-router.get('/new', controller.new)
+router.get("/new", controller.new)
 
 // DESTROY //
-router.delete('/:id', controller.destroy)
+router.delete("/:id", controller.destroy)
 
-// UPDATE // 
-router.put('/:id', controller.update)
+// UPDATE //
+router.put("/:id", controller.update)
 
-// CREATE // 
-router.post('/', controller.create)
+// CREATE //
+router.post("/", controller.create)
 
-// EDIT //
-router.get('/:id/edit', controller.edit)
+//  EDIT //
+router.get("/:id/edit", controller.edit)
 
 // SHOW //
-router.get('/:id', controller.show)
+router.get("/:id", controller.show)
 
 module.exports = router;

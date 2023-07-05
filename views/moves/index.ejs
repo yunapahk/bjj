@@ -21,6 +21,10 @@
             <div class="index-item">
                 <h3><a href="/position/<%= position._id %>" class="no-underline"><%= position.name %></a></h3>
                 <img class="index-image" src="<%= position.img %>">
+                <a href="/position/edit/<%= position._id %>"><button>Edit</button></a>
+                <form action="/position/delete/<%= position._id %>" method="POST">
+                    <button type="submit">Delete</button>
+                </form>
             </div>
         <% }) %>
     </div>
@@ -31,6 +35,10 @@
             <div class="index-item">
                 <h3><a href="/movement/<%= movement._id %>" class="no-underline"><%= movement.name %></a></h3>
                 <img class="index-image" src="<%= movement.img %>">
+                <a href="/movement/edit/<%= movement._id %>"><button>Edit</button></a>
+                <form action="/movement/delete/<%= movement._id %>" method="POST">
+                    <button type="submit">Delete</button>
+                </form>
             </div>
         <% }) %>
     </div>
@@ -41,6 +49,10 @@
             <div class="index-item">
                 <h3><a href="/submission/<%= submission._id %>" class="no-underline"><%= submission.name %></a></h3>
                 <img class="index-image" src="<%= submission.img %>">
+                <a href="/submission/edit/<%= submission._id %>"><button>Edit</button></a>
+                <form action="/submission/delete/<%= submission._id %>" method="POST">
+                    <button type="submit">Delete</button>
+                </form>
             </div>
         <% }) %>        
     </div>

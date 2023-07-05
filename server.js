@@ -1,7 +1,7 @@
 require('dotenv').config // loading environment variables
 const express = require('express') // import express framework
 const middleware = require('./utils/middleware')
-const registerControllers = require('/utils/registercontrollers')
+const registerControllers = require('./utils/registercontrollers')
 
 // REGISTER APP OBJECT
 const app = express()

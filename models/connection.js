@@ -9,6 +9,6 @@ mongoose.connect(DATABASE_URL, {})
 mongoose.connection
     .on("open", () => {console.log("Connected")})
     .on("close", () => {console.log("Disonnected")})
-    .on(error, () => {console.log(error)})
+    .on("error", () => {console.log(error)})
 
 module.exports = mongoose
