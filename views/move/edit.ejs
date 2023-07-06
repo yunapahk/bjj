@@ -7,7 +7,7 @@
 </head>
 <body>
     <h2>Edit Move</h2>
-        <form action="/movements/<%= move._id %>?_method=put" method="POST">
+        <form action="/movement/<%= move._id %>?_method=put" method="POST">
             <input type="text" name="name" placeholder="Name of Move" value="<%= move.name %>"/>
             <input type="text" name="img" placeholder="Image of Move" value="<%= move.img %>"/>
             <input type="submit" value="Update Movement"/>

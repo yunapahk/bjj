@@ -1,4 +1,4 @@
-const Movement = require('./movement');
+const Movement = require('./move');
 
 const mongoose = require('./connection');
 

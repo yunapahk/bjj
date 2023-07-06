@@ -19,10 +19,6 @@
             <div class="index-item">
                 <h3><a href="/move/<%= move._id %>" class="no-underline"><%= move.name %></a></h3>
                 <img class="index-image" src="<%= move.img %>">
-                <a href="/move/edit/<%= move._id %>"><button>Edit</button></a>
-                <form action="/move/delete/<%= move._id %>" method="POST">
-                    <button type="submit">Delete</button>
-                </form>
             </div>
         <% }) %>
     </div>
