@@ -7,9 +7,8 @@
 - User can create, view, edit, and delete list of Brazilian Jiu Jitsu positions, movements, and submissions
 
 
-## Mock UP of UI
--![Mobile View](/wireframe1.png)
--![Desktop View](/wireframe2.png)
+## Mock Up of UI
+(/wireframe2.png)
 
 ## List of Backend Endpoints
 
