@@ -1,5 +1,5 @@
 const Router = require('express').Router
-const controller = require('../controllers/movement') 
+const controller = require('../controllers/move') 
 
 const router = Router()
 
@@ -26,4 +26,4 @@ router.get("/:id/edit", controller.edit)
 // SHOW //
 router.get("/:id", controller.show)
 
-module.exports = router
+module.exports = router;

@@ -2,11 +2,11 @@ const mongoose = require('./connection')
 
 const {Schema, model} = mongoose
 
-const movementSchema = new Schema ({
+const moveSchema = new Schema ({
     name: String,
     img: String
 })
 
-const Movement = model('Movement', movementSchema)
+const Move = model('Move', moveSchema)
 
-module.exports = Movement
+module.exports = Move

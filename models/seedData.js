@@ -1,12 +1,5 @@
-const positions = [
+const moves = [
     
 ];
 
-const movements = [
-   { name: shrimping }
-];
-
-const submission = [
-
-];
 

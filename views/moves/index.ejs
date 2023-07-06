@@ -10,51 +10,21 @@
     <h1>Edit Bjj Moves</h1>
 
     <div class="create-button">
-        <a href="position/new"><button>Add New Position</button></a>
-        <a href="movement/new"><button>Add New Movement</button></a>
-        <a href="submission/new"><button>Add New Submission</button></a>
+        <a href="move/new"><button>Add New Move</button></a>
     </div>
 
-    <h2>Positions</h2>
+    <h2>Moves</h2>
     <div class="index-container">
-        <% position.forEach((position, index) => { %>
+        <% movement.forEach((move, index) => { %>
             <div class="index-item">
-                <h3><a href="/position/<%= position._id %>" class="no-underline"><%= position.name %></a></h3>
-                <img class="index-image" src="<%= position.img %>">
-                <a href="/position/edit/<%= position._id %>"><button>Edit</button></a>
-                <form action="/position/delete/<%= position._id %>" method="POST">
+                <h3><a href="/move/<%= move._id %>" class="no-underline"><%= move.name %></a></h3>
+                <img class="index-image" src="<%= move.img %>">
+                <a href="/move/edit/<%= move._id %>"><button>Edit</button></a>
+                <form action="/move/delete/<%= move._id %>" method="POST">
                     <button type="submit">Delete</button>
                 </form>
             </div>
         <% }) %>
-    </div>
-
-    <h2>Movements</h2>
-    <div class="index-container">
-        <% movement.forEach((movement, index) => { %>
-            <div class="index-item">
-                <h3><a href="/movement/<%= movement._id %>" class="no-underline"><%= movement.name %></a></h3>
-                <img class="index-image" src="<%= movement.img %>">
-                <a href="/movement/edit/<%= movement._id %>"><button>Edit</button></a>
-                <form action="/movement/delete/<%= movement._id %>" method="POST">
-                    <button type="submit">Delete</button>
-                </form>
-            </div>
-        <% }) %>
-    </div>
-
-    <h2>Submissions</h2>
-    <div class="index-container">
-        <% submission.forEach((submission, index) => { %>
-            <div class="index-item">
-                <h3><a href="/submission/<%= submission._id %>" class="no-underline"><%= submission.name %></a></h3>
-                <img class="index-image" src="<%= submission.img %>">
-                <a href="/submission/edit/<%= submission._id %>"><button>Edit</button></a>
-                <form action="/submission/delete/<%= submission._id %>" method="POST">
-                    <button type="submit">Delete</button>
-                </form>
-            </div>
-        <% }) %>        
     </div>
 </body>
 </html>
