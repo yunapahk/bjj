@@ -8,7 +8,7 @@
 
 
 ## Mock Up of UI
-(/wireframe2.png)
+-![Desktop View](/wireframe2.png)
 
 ## List of Backend Endpoints
 
