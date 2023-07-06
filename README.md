@@ -1,14 +1,19 @@
 # **Brazilian Jiu Jitsu Moves**
 
 ## Webpage
+[**LINK TO DEPLOYED WEBSITE**](http://www.render.com)
 
-## Purpose
-
+## Description
 - User can create, view, edit, and delete list of Brazilian Jiu Jitsu positions, movements, and submissions
 
-## Routes
 
-|Endpoint|Method|Response|
+## Mock UP of UI
+-![Desktop View]
+-![Mobile View]
+
+## List of Backend Endpoints
+
+|Endpoint|Method|Purpose|
 |--------|------|--------|
 |/position|GET|List of all positions|
 |/movement|GET|List of all movement|
@@ -26,7 +31,10 @@
 |/movement/:id|DELETE|Delete movement|
 |/submission/:id|DELETE|Delete submission|
 
+## ERD (ENTITY RELATIONSHIP DIAGRAM)
+![PICTURE OF ERD]()
+
 ## Wireframe
 
-## Tools
+## List of Technologies
 ![Example Image](/p2.jpg)

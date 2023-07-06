@@ -1,10 +1,9 @@
-require("dotenv").config() 
-const mongoose = require("mongoose")
+require("dotenv").config() // bring in .env variables
+const mongoose = require("mongoose") // MongoDB ORM
 
-const DATABASE_URL = process.env.DATABASE_URL 
-console.log(DATABASE_URL)
+const DATABASE_URL = process.env.DATABASE_URL // get DATABASE URI
 
-mongoose.connect(DATABASE_URL, {}) 
+mongoose.connect(DATABASE_URL) // connect to MongoDB
 
 mongoose.connection
     .on("open", () => {console.log("Connected")})
