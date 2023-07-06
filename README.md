@@ -8,8 +8,8 @@
 
 
 ## Mock UP of UI
--![Desktop View]
--![Mobile View]
+-![Mobile View](/wireframe1.png)
+-![Desktop View](/wireframe2.png)
 
 ## List of Backend Endpoints
 
