@@ -37,10 +37,11 @@
 |Day|Task|
 |---|----|
 |1|Complete ERD and Trello to do list|
-|2|Complete seedData|
-|3|Create gif play on hover|
-|4/5|Create OAuth|
-|6/7|Remaining CSS Styling|
+|2|Complete routes|
+|3|Complete seedData|
+|4|Create gif play on hover|
+|5/6|Create OAuth|
+|7|Remaining CSS Styling|
 
 ## List of Technologies
 ![Example Image](/p2.jpg)
