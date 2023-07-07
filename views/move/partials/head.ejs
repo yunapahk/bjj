@@ -11,20 +11,29 @@
    
 </head>
 <body>
-    <nav class="navbar">
-        <div class="title">
-            <h1>MoveOn</h1>
+    <div class="navbar">
+        <div class="home" href="#home">MoveOn</div>
+        <div class="nav-container">
+         <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </a>
+            <div class="nav-links">
+                <a class="nav-link" href="https://github.com/yunapahk/bjj/">Github</a>
+                <a href="#submissions">Submissions</a>
+                <a href="#movements">Movements</a>
+                <a href="#positions">Positions</a>
+            </div>
         </div>
-        <div class="search-bar">
-            <input type="search" placeholder="Search">
-            <button>Search</button>
-        </div>
-        <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-        </ul>
-    </nav>
+    </div>
 </body>
-</html>
+
+<script>
+    $(document).ready(function(){
+        $('.menu-icon').click(function(){
+            $('.nav-links').slideToggle(200);
+        })
+    });
+</script>
 </html>
