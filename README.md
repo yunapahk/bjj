@@ -11,28 +11,69 @@
 ![Desktop View](/wireframe2.png)
 
 ## List of Backend Endpoints
-
 |Endpoint|Method|Purpose|
 |--------|------|--------|
-|/position|GET|List of all positions|
-|/movement|GET|List of all movement|
-|/submission|GET|List of all submissions|
-|/position|POST|Create new position|
-|/movement|POST|Create new movement|
-|/submission|POST|Create new submission|
-|/position/:id|GET|JSON of positions with id|
-|/movement/:id|GET|JSON of movements with id|
-|/submission/:id|GET|JSON of submissions with id|
-|/position/:id|PUT|Update positions|
-|/movement/:id|PUT|Update movements|
-|/submission/:id|PUT|Update submissions|
-|/position/:id|DELETE|Delete position|
-|/movement/:id|DELETE|Delete movement|
-|/submission/:id|DELETE|Delete submission|
+|/move|GET|List of moves|
+|/move|POST|Create new moves|
+|/move/:id|GET|JSON of moves with id|
+|/move/:id|PUT|Update moves|
+|/move/:id|DELETE|Delete moves|
 
-## ERD (ENTITY RELATIONSHIP DIAGRAM)
-![PICTURE OF ERD]()
+## ERD Diagram
+``` mermaid
+erDiagram
+    USER {
+        string Login
+        string Password
+        string ForgotCode
+    }
 
+    USER ||--o{ HOME : landingPage
+
+    HOME {
+        string moveName
+        string moveType
+        string moveDescription
+        checkbox moveLearned
+        string moveImage
+    }
+
+    HOME ||--|{ CREATE : createMove
+    CREATE {
+        string moveName
+        string moveType
+        string moveDescription
+        checkbox moveLearned
+        string moveImage
+    }
+
+    HOME ||--|{ EDIT : editMove
+    EDIT {
+        string moveName
+        string moveType
+        string moveDescription
+        checkbox moveLearned
+        string moveImage
+    }
+
+    HOME ||--|{ DELETE : deleteMove
+    DELETE {
+        string moveName
+        string moveType
+        string moveDescription
+        checkbox moveLearned
+        string moveImage
+    }
+
+    HOME ||--o{ LOGOUT : logoutUser
+    LOGOUT {
+        string LogoutMessage
+    }
+```
+    
+
+
+---
 ## Wireframe
 
 ## List of Technologies
