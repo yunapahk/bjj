@@ -2,12 +2,12 @@
 
 ## Webpage
 [**Link to Deployed Site**](https://move-matrix.onrender.com)
----
+
 
 ## Description
 - User can create, view, edit, and delete list of Brazilian Jiu Jitsu positions, movements, and submissions
 
----
+
 ## List of Backend Endpoints
 |Endpoint|Method|Purpose|
 |--------|------|--------|
@@ -16,7 +16,8 @@
 |/move/:id|GET|JSON of moves with id|
 |/move/:id|PUT|Update moves|
 |/move/:id|DELETE|Delete moves|
----
+
+
 ## ERD Diagram
 ``` mermaid
 erDiagram
@@ -68,7 +69,7 @@ erDiagram
         string LogoutMessage
     }
 ```
----
+
 ## Daily Schedule
 |Day|Task|
 |---|----|
@@ -78,9 +79,9 @@ erDiagram
 |4|Create gif play on hover|
 |5/6|Create OAuth|
 |7|Remaining CSS Styling|
----
+
 ## Mock Up of UI
 ![Desktop View](/wireframe2.png)
----
+
 ## List of Technologies
 ![Example Image](/p2.jpg)
