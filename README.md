@@ -35,6 +35,7 @@
 
 ## Daily Schedule
 |Day|Task|
+|---|----|
 |1|Complete ERD and Trello to do list|
 |2|Complete seedData|
 |3|Create gif play on hover|
