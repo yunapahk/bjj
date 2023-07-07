@@ -4,21 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>BJJ Moves</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Edit Bjj Moves</h1>
-
     <div class="create-button">
         <a href="move/new"><button>Add New Move</button></a>
     </div>
 
     <h2>Moves</h2>
     <div class="index-container">
-        <% movement.forEach((move, index) => { %>
-            <div class="index-item">
-                <h3><a href="/move/<%= move._id %>" class="no-underline"><%= move.name %></a></h3>
-                <img class="index-image" src="<%= move.img %>">
+        <% moves.forEach((move, index) => { %>
+            <div class="index-items">
+                <a href="/move/<%= move._id %>" class="no-underline">Move: <%= move.name %></a>
+                <p class="type">Type: <%= move.type %></p>
+                <p class="description">Description: <%= move.description %></p>
+                <p class="points">Points: <%= move.points %></p>
+                <div class="img-container">
+                    <img class="static" src="<%= move.img %>">
+                </div>
             </div>
         <% }) %>
     </div>

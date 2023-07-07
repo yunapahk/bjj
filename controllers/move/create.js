@@ -1,14 +1,20 @@
-const Move = require('../../models/move');
-
 async function create(req, res) {
-    let newMove = { // Create a new move object with data from the request body
-        name: req.body.moveName,
-        img: req.body.moveImg
+    let newMove = {
+        name: req.body.name,
+        type: req.body.type,
+        description: req.body.description,
+        points: req.body.points,
+        img: req.body.img,
     }
 
-    const move = Move.create(newMove)
-    console.log(newMove, req.body)
-    res.redirect("/move")
+    try {
+        const move = await Move.create(newMove)
+        console.log(newMove, req.body)
+        res.redirect("/move")
+    } catch(err) {
+        console.log(err);
+        res.status(500).send(err);
+    }
 }
 
 module.exports = create

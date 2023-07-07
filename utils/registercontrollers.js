@@ -1,8 +1,7 @@
-const movementRoutes = require('../routes/movement')
+const moveRoutes = require('../routes/move')
 
 function registerControllers(app) {
-    app.use('/movements', movementRoutes);
-
+    app.use('/move', moveRoutes);
 }
 
 module.exports = registerControllers;

@@ -1,14 +1,11 @@
-const Movement = require('./move');
-
+const Move = require('./move');
 const mongoose = require('./connection');
-
-const movements = require('./seedData');
+const moves = require('./seedData');
 
 async function seed() { // populate database
     await Move.deleteMany({});
    
-    const createdMoves = await Movement.create(movements); // Insert seed data
-
+    const createdMoves = await Move.create(moves); // Insert seed data
     console.log(createdMoves.length);
     console.log(createdMoves[0]);
 }

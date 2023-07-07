@@ -1,8 +1,8 @@
 const Move = require('../../models/move');
 
 async function destroy(req, res) {
-    const moveId = req.params.id; // Get movementId from the request params
-    await Move.findByIdAndRemove(moveId); 
+    const id = req.params.id; // Get id from the request params
+    await Move.findByIdAndRemove(id); 
     res.redirect('/move');
     }
 

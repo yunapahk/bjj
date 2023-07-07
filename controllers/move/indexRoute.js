@@ -1,3 +1,4 @@
+const move = require('.')
 const Move = require('../../models/move');
 
 async function index(req, res) { // Retreive movements from the respective models

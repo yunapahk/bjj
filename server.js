@@ -9,9 +9,6 @@ const registerControllers = require('./utils/registercontrollers');
 const app = express();
 
 // REGISTER MIDDLEWARE
-app.use(morgan('dev'));
-app.use(methodOverride('_method')); // override with POST having ?_method=DELETE or ?_method=PUT
-app.use(express.static('public')); // serve static files from public folder
 middleware(app);
 
 // REGISTER ROUTES/CONTROLLERS
