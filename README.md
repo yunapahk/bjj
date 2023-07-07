@@ -81,7 +81,7 @@ erDiagram
 |7|Remaining CSS Styling|
 
 ## Mock Up of UI
-![Desktop View](/wireframe2.png)
+![Desktop View](/mockupofUI.jpeg)
 
 ## List of Technologies
 ![Example Image](/p2.jpg)
