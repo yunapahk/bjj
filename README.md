@@ -33,7 +33,13 @@
 ## ERD (ENTITY RELATIONSHIP DIAGRAM)
 ![PICTURE OF ERD]()
 
-## Wireframe
+## Daily Schedule
+|Day|Task|
+|1|Complete ERD and Trello to do list|
+|2|Complete seedData|
+|3|Create gif play on hover|
+|4/5|Create OAuth|
+|6/7|Remaining CSS Styling|
 
 ## List of Technologies
 ![Example Image](/p2.jpg)
