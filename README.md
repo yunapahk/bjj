@@ -1,11 +1,10 @@
-# **Brazilian Jiu Jitsu Moves**
+# **Jiu Jitsu Moves**
 
 ## Webpage
-[**LINK TO DEPLOYED WEBSITE**](https://move-matrix.onrender.com)
+[**Link to Deployed Site**](https://move-matrix.onrender.com)
 
 ## Description
 - User can create, view, edit, and delete list of Brazilian Jiu Jitsu positions, movements, and submissions
-
 
 ## Mock Up of UI
 ![Desktop View](/wireframe2.png)
@@ -28,6 +27,7 @@ erDiagram
         string ForgotCode
     }
 
+<<<<<<< HEAD
     USER ||--o{ HOME : landingPage
 
     HOME {
@@ -75,6 +75,17 @@ erDiagram
 
 ---
 ## Wireframe
+=======
+## Daily Schedule
+|Day|Task|
+|---|----|
+|1|Complete ERD and Trello to do list|
+|2|Complete routes|
+|3|Complete seedData|
+|4|Create gif play on hover|
+|5/6|Create OAuth|
+|7|Remaining CSS Styling|
+>>>>>>> db4b0e2ee735c720153f6280310b4f7cb61fc60f
 
 ## List of Technologies
 ![Example Image](/p2.jpg)
