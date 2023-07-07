@@ -27,7 +27,6 @@ erDiagram
         string ForgotCode
     }
 
-<<<<<<< HEAD
     USER ||--o{ HOME : landingPage
 
     HOME {
