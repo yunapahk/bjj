@@ -1,3 +1,5 @@
+const Move = require('../../models/move');
+
 async function create(req, res) {
     let newMove = {
         name: req.body.name,
