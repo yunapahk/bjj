@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Move</title>
+    <link rel="stylesheet" href="/public/new.css">
 </head>
 <body>
     <h1>Add New Move</h1>
         <div class="new-inputs">
             <form action="/move" method="POST">
-                <input type="text" name="name" placeholder="Name of Move">
-                <input type="text" name="type" placeholder="Type of Move">
-                <input type="text" name="description" placeholder="Description of Move">
-                <input type="text" name="points" placeholder="Move Points">
-                <input type="checkbox" name="learned"/>
-                <input type="text" name="img" placeholder="Image of Move">
+                <div class="form-inputs">
+                    <input type="text" name="name" placeholder="Name of Move">
+                    <input type="text" name="type" placeholder="Type of Move">
+                    <input type="text" name="description" placeholder="Description of Move">
+                    <input type="text" name="points" placeholder="Move Points">
+                    <input type="checkbox" name="learned"/>
+                    <input type="text" name="img" placeholder="Image of Move">
+                </div>
                 <input type="submit" value="Add" class="create-button">
             </form>
         </div>
