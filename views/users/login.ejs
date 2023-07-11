@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../move/partials/head.ejs') %>
+<head>
+    <link rel="stylesheet" href="/login.css">
+</head>
+<body>
+    <main>
+        <div>
+            <form action="/user/login" method="POST" class="login-form">
+                <div class="login-container">
+                    <div class="welcome-back">Welcome Back</div>
+                    <div class="input-wrapper">
+                        <input type="text" name="username" required placeholder="username" />
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="password" name="password" required placeholder="password" />
+                    </div>
+
+                    <input type="submit" value="Login" />
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

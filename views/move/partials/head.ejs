@@ -8,11 +8,18 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <!-- Linking CSS -->
     <link rel="stylesheet" href="/styles.css">
+    <!-- Linking Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-REjxEn8sgD7uNQIt5faY7HHk4Zgg1Jr7GJUdjqTmElMdTKjsfK/b/iKYbUKRA7nulm5K8zmGTLakjvsRHrZgrw==" crossorigin="anonymous" />
 </head>
 <body>
     <div class="navbar">
         <a href="#home">MoveOn</a>
-        <div class="dropdowns">
+        <div class="hamburger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="navbar-links">
             <div class="dropdown">
                 <button class="dropbtn">Positions
                     <i class="fa fa-caret-down"></i>
@@ -43,15 +50,16 @@
                     <a href="#">Link 3</a>
                 </div>
             </div>
-            <a class="nav-link" href="https://github.com/yunapahk/bjj/">Github</a>
+            <a class="nav-link github-link" href="https://github.com/yunapahk/bjj/">Github</a>
         </div>
     </div>
 </body>
 <script>
-    $(document).ready(function(){
-        $('.menu-icon').click(function(){
-            $('.nav-links').slideToggle(200);
-        })
-    });
+   $(document).ready(function() {
+  $('.hamburger-menu').click(function() {
+    $(this).toggleClass('open');
+    $('.navbar-links').toggleClass('active');
+  });
+});
 </script>
 </html>

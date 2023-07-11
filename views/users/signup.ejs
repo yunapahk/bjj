@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../move/partials/head.ejs') %>
+<head>
+    <link rel="stylesheet" href="/signup.css">
+</head>
+<body>
+    <main>
+        <div>
+            <form action="/user/signup" method="POST" class="login-form">
+                <div class="signup-container">
+                    <div class="create-account">Create Account</div>
+                    <div class="input-wrapper">
+                        <div class="form-row">
+                            <input type="text" name="username" required placeholder="username" />
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="password" name="password" required placeholder="password" />
+                        </div>
+                    </div>
+                    <input type="submit" value="Create Account" />
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
