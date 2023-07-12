@@ -8,26 +8,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p><%= user %></p>
-    <a href="/user/logout"><button>Logout</button></a>
-    
-    <div class="create-button">
-        <a href="move/new"><button>Add New Move</button></a>
+    <div class="welcome-back-title">
+        <p>Welcome back, <%= user %></p>
     </div>
 
-    <h2>Moves</h2>
+    <a href="/user/logout"><button class="logout-button">Logout</button></a>
+    <a href="move/new"><button class="add-move-button">Add New Move</button></a>
+    
+
+
     <div class="index-container">
         <% moves.forEach((move, index) => { %>
-            <div class="index-items">
-                <a href="/move/<%= move._id %>" class="no-underline">Move: <%= move.name %></a>
-                <p class="type">Type: <%= move.type %></p>
-                <p class="description">Description: <%= move.description %></p>
-                <p class="points">Points: <%= move.points %></p>
-                <div class="img-container">
-                    <img class="static" src="<%= move.img %>">
-                </div>
+          <div class="move-item">
+            <a href="/move/<%= move._id %>" class="no-underline"><%= move.name %></a>
+            <div class="move-details">
+              <p class="type">Type: <%= move.type %></p>
+              <p class="description">Description: <%= move.description %></p>
+              <p class="points">Points: <%= move.points %></p>
             </div>
+            <div class="img-container">
+              <img class="static" src="<%= move.img %>">
+            </div>
+          </div>
         <% }) %>
-    </div>
+      </div>      
 </body>
 </html>
