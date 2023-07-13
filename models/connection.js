@@ -3,7 +3,7 @@ const mongoose = require("mongoose") // MongoDB ORM
 
 const DATABASE_URL = process.env.DATABASE_URL // get DATABASE URI
 
-mongoose.connect(DATABASE_URL);
+mongoose.connect(DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true });
 
 mongoose.connection
     .on("open", () => {console.log("Connected")})
