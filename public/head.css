@@ -3,13 +3,29 @@
   background-color: #373737;
 }
 
+body {
+  height: 100vh;
+  margin: 0;
+}
+
 .index-container {
   position: relative;
   width: 50%;
-  height: 80%;
+  height: 0%;
   overflow: hidden;
   box-shadow: 0 10px 20px -5px #232323;
   border-radius: 10px;
+  margin-left: 20px; 
+}
+
+.play-on-hover {
+  background-image: url(static.jpg);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.play-on-hover:hover {
+  background-image: url(animated.gif);
 }
 
 .move-details {
@@ -29,7 +45,7 @@ p.description {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 10px;
+  padding: 20px 20px;
 }
 
 a.no-underline {
@@ -50,15 +66,6 @@ a.no-underline {
   padding: 20px 10px 20px 20px;
   color: rgb(136, 131, 131);
   font-style: italic;
-}
-
-.static {
-  position: relative;
-  box-shadow: 0 10px 20px -5px #ccc;
-}
-
-.static:hover {
-  box-shadow: 0 10px 20px -5px #777;
 }
 
 .logout-button {
@@ -121,10 +128,9 @@ a.no-underline {
 }
 
 .navbar-links {
-  display: flex;
   position: absolute;
   right: 0;
-  background-color: #ffffff;
+  background-color: #f0a925;;
   width: auto;
 }
 
@@ -134,7 +140,8 @@ a.no-underline {
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;
+  padding-top: 5px;
+  font-size: 18px;
   border: none;
   outline: none;
   color: white;
@@ -146,7 +153,7 @@ a.no-underline {
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: rgb(215, 175, 75);
 }
 
 .dropdown-content {
@@ -213,13 +220,7 @@ a.no-underline {
   bottom: 0.75rem;
 }
 
-/* Normal nav links */
-.navbar .dropdown,
-.navbar .nav-link {
-  display: block;
-}
-
-/* Style for GitHub link */
+/* GitHub icon */
 .navbar .github-link {
   font-size: 16px;
   padding: 14px 16px 14px 14px;
@@ -227,6 +228,17 @@ a.no-underline {
   text-decoration: none;
   font-weight: lighter;
   font-style: normal;
+  background-color: #f0a925;
+}
+
+.fa-square-github {
+  margin-right: 5px;
+  background-color: whitesmoke;
+  border-radius: none;
+}
+
+.fa-caret-down {
+  background-color: #f0a925;
 }
 
 @media (max-width: 600px) {

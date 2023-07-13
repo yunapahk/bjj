@@ -5,22 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Move</title>
-    <link rel="stylesheet" href="/public/new.css">
+    <link rel="stylesheet" href="/new.css">
+    <!-- Linking Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <div class="back-btn">
+        <a href="/move">
+          <span class="back-icon">
+            <i class="fa-solid fa-circle-arrow-left"></i>
+          </span>
+        </a>
+      </div>
+      
+
     <h1>Add New Move</h1>
-        <div class="new-inputs">
+    <div class="new-container">
             <form action="/move" method="POST">
                 <div class="form-inputs">
                     <input type="text" name="name" placeholder="Name of Move">
                     <input type="text" name="type" placeholder="Type of Move">
                     <input type="text" name="description" placeholder="Description of Move">
                     <input type="text" name="points" placeholder="Move Points">
-                    <input type="checkbox" name="learned"/>
                     <input type="text" name="img" placeholder="Image of Move">
-                </div>
-                <input type="submit" value="Add" class="create-button">
-            </form>
-        </div>
+                    Learned: <input type="checkbox" name="learned"/>
+                    <div class="add-btn">
+                        <input type="submit" value="Add" class="add-btn">
+                        </form>
+                    </div>
+                </div> 
+    </div>        
 </body>
 </html>

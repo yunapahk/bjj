@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="welcome-back-title">
-        <p>Welcome back, <%= user %></p>
+        <p>Welcome back <%= user %></p>
     </div>
 
     <a href="/user/logout"><button class="logout-button">Logout</button></a>
@@ -26,11 +26,13 @@
               <p class="description">Description: <%= move.description %></p>
               <p class="points">Points: <%= move.points %></p>
             </div>
-            <div class="img-container">
+            <div class="img-container play-on-hover">
               <img class="static" src="<%= move.img %>">
             </div>
           </div>
         <% }) %>
-      </div>      
+      </div>   
+      
+      
 </body>
 </html>
