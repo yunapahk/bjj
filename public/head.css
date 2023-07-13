@@ -4,7 +4,6 @@
 }
 
 body {
-  height: 100vh;
   margin: 0;
 }
 
@@ -16,16 +15,6 @@ body {
   box-shadow: 0 10px 20px -5px #232323;
   border-radius: 10px;
   margin-left: 20px; 
-}
-
-.play-on-hover {
-  background-image: url(static.jpg);
-  background-size: cover;
-  cursor: pointer;
-}
-
-.play-on-hover:hover {
-  background-image: url(animated.gif);
 }
 
 .move-details {

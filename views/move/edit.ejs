@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= stylesheet href="/edit.css">
     <title>Edit Move <%= move.name %></title>
 </head>
 <body>
     <h2>Edit Move</h2>
-        <form action="/move/<%= move._id %>?_method=put" method="POST">
+    <form action="/move/<%= move._id %>?_method=put" method="POST">
+        <div class="edit-container">
             <input type="text" name="name" placeholder="Name of Move" value="<%= move.name %>"/>
             <input type="text" name="type" placeholder="Type of Move" value="<%= move.type %>"/>
             <input type="text" name="description" placeholder="Description of Move" value="<%= move.description %>"/>
@@ -15,5 +17,6 @@
             <input type="text" name="img" placeholder="Image of Move" value="<%= move.img %>"/>
             <input type="submit" value="Add Move"/>
         </form>
+    </div>
 </body>
 </html>

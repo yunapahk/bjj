@@ -1,19 +1,14 @@
 body {
     height: 100vh;
     margin: 0;
+    background-color: #383838;
 }
 
-h1 {
-    color: rgb(167, 163, 163);
-    font-style: italic;
-    padding: 20px 20px;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+h2 {
+    color: whitesmoke;
+    padding-left: 20px;
 }
-
-.new-container {
+.edit-container {
     border: #fff 3px solid;
     background-color: whitesmoke;
     box-shadow: 3px #161616;
@@ -22,7 +17,7 @@ h1 {
     width: 50%;
     height: 55vh;
 }
-  
+
 .form-inputs {
     display: flex;
     flex-direction: column;
@@ -30,14 +25,14 @@ h1 {
     align-items: center;
     justify-content: center;
     background-color: whitesmoke;
-    padding-top: 30px;
+    padding-top: 40px;
 }
-  
 
 input[type="text"] {
     width: 90%;
     padding: 10px;
     border-radius: 5px;
+    gap: 10px;
     border: 1px solid #383838;
     background-color: whitesmoke;
     color: #9b9898;
@@ -47,7 +42,7 @@ input[type="checkbox"] {
     width: 20px;
 }
 
-.add-btn {
+input[type="submit"] {
     display: inline-block;
     width: 150px;
     font-size: 1em;
@@ -56,21 +51,3 @@ input[type="checkbox"] {
     border-color: royalblue;
     height: 40px;
   }
-  
-  .fa-circle-arrow-left {
-    display: inline-block;
-    vertical-align: middle;
-    padding-left: 20px;
-    font-size: 50px;
-    color: whitesmoke;
-    padding-top: 20px;
-  }
-
-  .fa-caret-down {
-    background-color: #f0a925;
-  }
-
-  label {
-    background-color: whitesmoke;
-  }
-  
