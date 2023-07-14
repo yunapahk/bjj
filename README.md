@@ -5,7 +5,7 @@
 
 
 ## Description
-- User can create, view, edit, and delete list of Brazilian Jiu Jitsu positions, movements, and submissions
+- Full CRUD app where user is able to add move name, type, description, points, and image.
 
 
 ## List of Backend Endpoints
