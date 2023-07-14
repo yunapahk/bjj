@@ -16,7 +16,9 @@
 |/move/:id|GET|JSON of moves with id|
 |/move/:id|PUT|Update moves|
 |/move/:id|DELETE|Delete moves|
-
+|/user/signup|POST|User signup|
+|/user/login|POST|User login|
+|/logout|GET|User logout|
 
 ## ERD Diagram
 ``` mermaid
