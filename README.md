@@ -1,7 +1,8 @@
 # **Jiu Jitsu Moves**
 
-## Webpage
-[**Link to Deployed Site**](https://move-matrix.onrender.com)
+## Links
+[**Deployed Site**](https://move-matrix.onrender.com)
+[**Trello**](https://trello.com/b/mGwJpfU6/moveon)
 
 
 ## Description
@@ -85,9 +86,6 @@ erDiagram
 |4|Create gif play on hover|
 |5/6|Create OAuth|
 |7|Remaining CSS Styling|
-
-## Trello
-[**Link to Trello**](https://trello.com/b/mGwJpfU6/moveon)
 
 ## List of Technologies
 ![Example Image](/p2.jpg)
