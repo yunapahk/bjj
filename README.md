@@ -72,6 +72,10 @@ erDiagram
     }
 ```
 
+
+## Mock Up of UI
+![Desktop View](/mockupofUI.jpeg)
+
 ## Daily Schedule
 |Day|Task|
 |---|----|
@@ -82,8 +86,8 @@ erDiagram
 |5/6|Create OAuth|
 |7|Remaining CSS Styling|
 
-## Mock Up of UI
-![Desktop View](/mockupofUI.jpeg)
+## Trello
+[**Link to Trello**](https://trello.com/b/mGwJpfU6/moveon)
 
 ## List of Technologies
 ![Example Image](/p2.jpg)
