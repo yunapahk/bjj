@@ -1,11 +1,13 @@
 # **Jiu Jitsu Moves**
 
-## Webpage
-[**Link to Deployed Site**](https://move-matrix.onrender.com)
+## Links
+[**Deployed Site**](https://move-matrix.onrender.com)
+
+[**Trello**](https://trello.com/b/mGwJpfU6/moveon)
 
 
 ## Description
-- User can create, view, edit, and delete list of Brazilian Jiu Jitsu positions, movements, and submissions
+- User is able to view list of jiu jitsu moves including descriptions, point systems, and images.
 
 
 ## List of Backend Endpoints
@@ -16,7 +18,9 @@
 |/move/:id|GET|JSON of moves with id|
 |/move/:id|PUT|Update moves|
 |/move/:id|DELETE|Delete moves|
-
+|/user/signup|POST|User signup|
+|/user/login|POST|User login|
+|/logout|GET|User logout|
 
 ## ERD Diagram
 ``` mermaid
@@ -70,6 +74,10 @@ erDiagram
     }
 ```
 
+
+## Mock Up of UI
+![Desktop View](/mockupofUI.jpeg)
+
 ## Daily Schedule
 |Day|Task|
 |---|----|
@@ -79,9 +87,6 @@ erDiagram
 |4|Create gif play on hover|
 |5/6|Create OAuth|
 |7|Remaining CSS Styling|
-
-## Mock Up of UI
-![Desktop View](/mockupofUI.jpeg)
 
 ## List of Technologies
 ![Example Image](/p2.jpg)
