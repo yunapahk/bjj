@@ -7,7 +7,7 @@
 
 
 ## Description
-- Full CRUD app where user is able to add move name, type, description, points, and image.
+- User is able to view list of jiu jitsu moves including descriptions, point systems, and images.
 
 
 ## List of Backend Endpoints
