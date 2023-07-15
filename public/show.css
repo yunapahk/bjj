@@ -292,6 +292,8 @@ body {
     justify-content: center;
     align-items: center;
     background-color: whitesmoke;
+    width: 60%;
+    margin: 0 auto;
 }
 
 p {

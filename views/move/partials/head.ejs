@@ -14,54 +14,28 @@
 <body>
     <div class="navbar">
         <a href="/move">MoveOn</a>
+        <div class="navbar-links">
+            <a class="nav-link" href="https://github.com/yunapahk/bjj/">
+                <i class="fa-brands fa-square-github" style="color: #f0a925;"></i>
+            </a>
+        </div>
         <div class="hamburger-menu">
             <div></div>
             <div></div>
             <div></div>
         </div>
-        <div class="navbar-links">
-            <div class="dropdown">
-                <button class="dropbtn">Positions
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content links">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Movements
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Submissions
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-            <a class="nav-link" href="https://github.com/yunapahk/bjj/">
-                <i class="fa-brands fa-square-github" style="color: #f0a925;"></i>
-              </a>
+        <div class="hamburger-menu-close">
+            <i class="fas fa-times"></i>
         </div>
     </div>
 </body>
 <script>
    $(document).ready(function() {
-  $('.hamburger-menu').click(function() {
-    $(this).toggleClass('open');
-    $('.navbar-links').toggleClass('active');
-  });
-});
+      $('.hamburger-menu').click(function() {
+        $(this).toggleClass('open');
+        $('.navbar-links').toggleClass('active');
+        $('.column-links').toggleClass('active');
+      });
+    });
 </script>
 </html>

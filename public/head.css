@@ -10,7 +10,7 @@ body {
 
 .index-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   width: 80%;
   margin: 0 auto;
@@ -34,12 +34,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: .25rem solid orange;
+  border: .2rem solid orange;
   border-radius: 10px;
 }
 
 .move-item > a {
-  border-radius: 7px;
+  border-radius: 8px;
 }
 
 a.no-underline {
