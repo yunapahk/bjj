@@ -1,10 +1,10 @@
 require('dotenv').config; // loading environment variables
 const express = require('express'); // import express framework
-const morgan = require('morgan');
+// const morgan = require('morgan'); // for some reason it runs without this code
 const MoveRouter = require('./controllers/move');
 const UserRouter = require('./routes/user');
 const methodOverride = require('method-override');
-const middleware = require('./utils/middleware');
+// const middleware = require('./utils/middleware'); // for some reason it runs without this code
 const registerControllers = require('./utils/registercontrollers');
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
@@ -23,6 +23,8 @@ app.use(session({
 app.use(express.static('public'))
 app.use(express.urlencoded());
 app.use(methodOverride('_method'))
+// app.use(morgan('morgan')) // for some reason it runs without this code
+// app.use(middleware('middleware')) // for some reason it runs without this code
 
 app.get('/', (req, res) => {
     res.render('index.ejs')

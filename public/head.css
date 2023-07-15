@@ -7,45 +7,50 @@ body {
   margin: 0;
 }
 
+
 .index-container {
-  position: relative;
-  width: 50%;
-  height: 0%;
-  overflow: hidden;
-  box-shadow: 0 10px 20px -5px #232323;
-  border-radius: 10px;
-  margin-left: 20px; 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.index-image {
+  width: 220px;
+  height: 200px;
+  border-radius: 10%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
 }
 
 .move-details {
   display: none;
 }
 
-.index-items,
-.img-container,
-p.points,
-p.type,
-p.type,
-p.description {
-  background-color: whitesmoke;
+.move-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: .25rem solid orange;
+  border-radius: 10px;
 }
 
-.img-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 20px;
+.move-item > a {
+  border-radius: 7px;
 }
 
 a.no-underline {
   text-decoration: none;
   color: black;
   background-color: whitesmoke;
-  display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
   font-size: 20px;
+  text-align: center;
 }
 
 .welcome-back-title {
@@ -116,6 +121,11 @@ a.no-underline {
   background-color: #f0a925;
 }
 
+.navbar .dropdown,
+.navbar .nav-link {
+  display: none;
+}
+
 .navbar-links {
   position: absolute;
   right: 0;
@@ -172,7 +182,7 @@ a.no-underline {
 }
 
 .hamburger-menu {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 2rem;
@@ -196,7 +206,7 @@ a.no-underline {
 .hamburger-menu.open div:first-child {
   transform: rotate(45deg);
   position: relative;
-  top: 0.75rem;
+  top: 0.65rem;
 }
 
 .hamburger-menu.open div:nth-child(2) {
@@ -206,7 +216,7 @@ a.no-underline {
 .hamburger-menu.open div:last-child {
   transform: rotate(-45deg);
   position: relative;
-  bottom: 0.75rem;
+  bottom: 0.65rem;
 }
 
 /* GitHub icon */
@@ -231,50 +241,10 @@ a.no-underline {
 }
 
 @media (max-width: 600px) {
-  /* Hide normal nav links and display hamburger menu */
-  .navbar .dropdown,
-  .navbar .nav-link {
-    display: none;
-  }
   .navbar-links:not(.active) {
     display: none;
   }
   .navbar-links.active {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 100%;
-  }
-  .navbar-links a,
-  .dropdown .dropbtn,
-  .github-link {
-    text-align: right;
-    padding: 10px 20px;
-    display: block;
-    width: 100%;
-  }
-  .hamburger-menu {
-    display: flex;
-  }
-  .hamburger-menu div {
-    width: 2rem;
-    height: 0.25rem;
-    background: white;
-    border-radius: 10px;
-    transition: all 0.3s linear;
-    position: relative;
-  }
-  .hamburger-menu.open div:first-child {
-    transform: rotate(45deg);
-    position: relative;
-    top: 0.65rem;
-  }
-  .hamburger-menu.open div:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger-menu.open div:last-child {
-    transform: rotate(-45deg);
-    position: relative;
-    bottom: 0.65rem;
   }
 }

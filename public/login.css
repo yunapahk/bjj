@@ -1,4 +1,9 @@
-.sign-up-button {
+body {
+    height: 120vh;
+}
+
+
+input[type="submit"] {
     display: inline-block;
     width: 150px;
     font-size: 1em;
@@ -8,6 +13,18 @@
     height: 40px;
     color: whitesmoke;
 }
+
+input[type="text"],
+input[type="password"] {
+    margin-top: 35px;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #383838;
+    background-color: whitesmoke;
+    color: black;
+}
+
 
 .login-button {
     display: inline-block;
@@ -20,15 +37,43 @@
     color: whitesmoke;
 }
 
-.btn-container {
-    margin-bottom: 20px; 
+.signup-button {
+    display: inline-block;
+    width: 150px;
+    font-size: 1em;
+    background-color: rgb(0, 127, 246);
+    border-radius: 8px;
+    border-color: royalblue;
+    height: 40px;
+    color: whitesmoke;
+}
+
+.login-container {
     border: #fff 3px solid;
     background-color: whitesmoke;
     border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 30vh;
-    padding-left: 50px;
-    padding-top: 30px;
+    align-items: center;
+    width: 40%;
+    height: 70vh;
+    text-align: center;
+    margin-top: 40px;
+    margin-inline: auto;
+}
+
+.btn-container {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.welcome-back {
+    padding-top: 20px;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.input-wrapper {
+    margin-bottom: 20px;
+    background-color: whitesmoke;
 }

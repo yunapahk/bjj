@@ -1,17 +1,287 @@
-.show-container {
-    position: relative;
-    width: 80%;
-    overflow: hidden;
-    box-shadow: 0 10px 20px -5px #232323;
-    border-radius: 10px;
-    margin: 20px auto; 
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #373737;
 }
 
+body {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    height: 150vh;
+}
+
+.show-container {
+    flex-wrap: wrap;
+    min-height: 300px;
+    justify-content: space-around;
+}
+
+.move {
+    flex-basis: calc(25% - 10px);  
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+  
+  .index-image {
+    width: 220px;
+    height: 200px;
+    border-radius: 10%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+  }
+  
+  .move-details {
+    display: none;
+  }
+  
+  
+  a.no-underline {
+    text-decoration: none;
+    color: black;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 20px;
+  }
+  
+  .welcome-back-title {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    padding: 20px 10px 20px 20px;
+    color: rgb(136, 131, 131);
+    font-style: italic;
+  }
+  
+  .logout-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0a925;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    left: 80px;
+  }
+  
+  .logout-button:hover {
+    background-color: red;
+  }
+  
+  .add-move-button {
+    text-decoration: none;
+    display: flex;
+    padding: 10px 20px;
+    background-color: #f0a925;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .add-move-button:hover {
+    background-color: #e7ba67;
+  }
+  
+  .navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0a925;
+    padding: 0 20px;
+    box-shadow: 2px solid black;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 14px 5px;
+    text-decoration: none;
+    background-color: #f0a925;
+  }
+  
+  .navbar-links {
+    position: absolute;
+    right: 0;
+    background-color: #f0a925;;
+    width: auto;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    padding-top: 5px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: #f0a925;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: rgb(215, 175, 75);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .hamburger-menu div {
+    width: 2rem;
+    height: 0.25rem;
+    background: white;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+  }
+  
+  .hamburger-menu.open div:first-child {
+    transform: rotate(45deg);
+    position: relative;
+    top: 0.75rem;
+  }
+  
+  .hamburger-menu.open div:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-menu.open div:last-child {
+    transform: rotate(-45deg);
+    position: relative;
+    bottom: 0.75rem;
+  }
+  
+  /* GitHub icon */
+  .navbar .github-link {
+    font-size: 16px;
+    padding: 14px 16px 14px 14px;
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+    font-style: normal;
+    background-color: #f0a925;
+  }
+  
+  .fa-square-github {
+    margin-right: 5px;
+    background-color: whitesmoke;
+    border-radius: none;
+  }
+  
+  .fa-caret-down {
+    background-color: #f0a925;
+  }
+  
+  @media (max-width: 600px) {
+    /* Hide normal nav links and display hamburger menu */
+    .navbar .dropdown,
+    .navbar .nav-link {
+      display: none;
+    }
+    .navbar-links:not(.active) {
+      display: none;
+    }
+    .navbar-links.active {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+    }
+    .navbar-links a,
+    .dropdown .dropbtn,
+    .github-link {
+      text-align: right;
+      padding: 10px 20px;
+      display: block;
+      width: 100%;
+    }
+    .hamburger-menu {
+      display: flex;
+    }
+    .hamburger-menu div {
+      width: 2rem;
+      height: 0.25rem;
+      background: white;
+      border-radius: 10px;
+      transition: all 0.3s linear;
+      position: relative;
+    }
+    .hamburger-menu.open div:first-child {
+      transform: rotate(45deg);
+      position: relative;
+      top: 0.65rem;
+    }
+    .hamburger-menu.open div:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger-menu.open div:last-child {
+      transform: rotate(-45deg);
+      position: relative;
+      bottom: 0.65rem;
+    }
+  }
+
+  
 .name,
 .description,
 .points,
