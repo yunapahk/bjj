@@ -1,12 +1,18 @@
-const mongoose = require('./connection')
+////////////////////////
+// Setup - Import deps
+////////////////////////
+const mongoose = require('mongoose');
+const { Schema, model } = mongoose;
 
-const {Schema, model} = mongoose 
+const userSchema = new Schema(
+    {
+        username: { type: String, required: true, unique: true },
+        password: { type: String, required: true }
+    }
+);
 
-const userSchema = new Schema({
-    username: {type: String, required: true, unique: true},
-    password: {type: String, required: true}
-});
-
-const User = model('user', userSchema)
-
-module.exports = User;
+const User = model("User", userSchema)
+///////////////////////
+// Exports
+///////////////////////
+module.exports = User
