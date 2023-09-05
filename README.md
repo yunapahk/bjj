@@ -9,7 +9,7 @@
 ![HomePage](https://i.imgur.com/OLWl4rG.png)
 ![Edit](https://i.imgur.com/XUe815x.png)
 ![Update](https://i.imgur.com/xzKE3ei.png)
-![Edit](https://i.imgur.com/f0H0CBz.png)
+
 
 ## Description
 - User is able to view list of jiu jitsu moves including descriptions, point systems, and images.
