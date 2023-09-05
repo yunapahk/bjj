@@ -5,6 +5,8 @@
 
 [**Trello**](https://trello.com/b/mGwJpfU6/moveon)
 
+## Screenshots
+![Home Page](https://i.imgur.com/OLWl4rG.png)
 
 ## Description
 - User is able to view list of jiu jitsu moves including descriptions, point systems, and images.
